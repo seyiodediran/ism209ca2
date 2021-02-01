@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+
+
+{% block body %}
+<div class="columns">
+    {% for User in users %}
+        <div class="column">
+
+
+            {{User.firstname}}<br/>
+            {{User.lastname}}<br/>
+
+            {{User.dob}}<br/>
+
+            {{User.Residential}}<br/>
+
+            {{User.Nationality}}<br/>
+            {{User.nin}}
+
+
+
+
+        </div>
+    {% endfor %}
+
+    </div>
+
+
+{% endblock %}

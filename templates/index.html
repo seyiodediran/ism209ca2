@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+
+
+{% block body %}
+<div class="columns">
+        <div class="column">
+
+        </div>
+        <div class="column">
+
+        <div class="notification {{css}}">
+            {{information}}
+        </div>
+
+        <form action="/process-signup/" method="post">
+        <div class="field">
+          <label class="label">firstname</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="firstname" name="firstname">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">lastname</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="lastname" name="lastname" >
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">DOB</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="01/01/1999" name="dob" >
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Residential Address</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="KT U3 E7F" name="residential" >
+          </div>
+        </div>
+
+            <div class="field">
+          <label class="label">Nationality</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Nationality" name="nationality" >
+          </div>
+        </div>
+
+            <div class="field">
+          <label class="label">NIN</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="NIN" name="nin" >
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <button class="button is-link" type="submit">Submit</button>
+          </div>
+        </div>
+
+        </form>
+
+        </div>
+    </div>
+
+
+{% endblock %}
